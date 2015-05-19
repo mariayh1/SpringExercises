@@ -9,6 +9,7 @@
 	<configs>
 		<config>src/main/java/com/marsuaga/spring/beans/beans.xml</config>
 		<config>src/main/java/com/marsuaga/spring/beans/beans15.xml</config>
+		<config>src/main/java/com/marsuaga/spring/beans/beansAutowiring.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>

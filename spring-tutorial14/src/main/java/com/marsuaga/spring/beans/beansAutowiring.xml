@@ -6,14 +6,16 @@
 <!-- Autowiring by type: be careful with:
 	1. multiple beans 
 	2. multiple beans implement the same interface and it is generalized -->
+<!-- Autowiring by name in case we use generalization but be careful
+    1. use the exactly the property names it is case-sensitive -->
 	<bean id="logger" class="com.marsuaga.spring.autowiring.Logger"
-		autowire="byType">
+		autowire="byName">
 	</bean>
-	<bean id="consolewriter"
+	<bean id="consoleWriter"
 		class="com.marsuaga.spring.autowiring.ConsoleWriter">
 	</bean>
 
-	<bean id="filewriter"
+	<bean id="fileWriter"
 		class="com.marsuaga.spring.autowiring.FileWriter">
 	</bean>
 </beans>
