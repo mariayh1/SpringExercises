@@ -1,0 +1,49 @@
+2015-05-19 16:04:49,565 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.marsuaga.spring.test:test14:0.0.1-SNAPSHOT @ /Users/mariaarsuagarios/Documents/springWorkspace/spring-tutorial14/pom.xml.
+2015-05-19 16:04:50,517 [Worker-0] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /spring-tutorial14/src/main/java
+2015-05-19 16:04:50,518 [Worker-0] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /spring-tutorial14/src/test/java
+2015-05-19 16:04:50,581 [Worker-0] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 4 sec
+2015-05-19 16:04:51,492 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.marsuaga.spring.test:test14:0.0.1-SNAPSHOT @ /Users/mariaarsuagarios/Documents/springWorkspace/spring-tutorial14/pom.xml.
+2015-05-19 16:04:52,671 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.marsuaga.spring.test:test14:0.0.1-SNAPSHOT @ /Users/mariaarsuagarios/Documents/springWorkspace/spring-tutorial14/pom.xml.
+2015-05-19 16:04:52,823 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-05-19 16:04:52,824 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/mariaarsuagarios/Documents/springWorkspace/spring-tutorial14/src/main/resources
+2015-05-19 16:04:52,826 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-05-19 16:04:52,826 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/mariaarsuagarios/Documents/springWorkspace/spring-tutorial14/src/test/resources
+2015-05-19 16:04:54,438 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.marsuaga.spring.test:test14:0.0.1-SNAPSHOT @ /Users/mariaarsuagarios/Documents/springWorkspace/spring-tutorial14/pom.xml.
+2015-05-19 16:04:57,097 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-05-19 16:04:57,098 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/mariaarsuagarios/Documents/springWorkspace/spring-tutorial14/src/main/resources
+2015-05-19 16:04:57,099 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-05-19 16:04:57,100 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/mariaarsuagarios/Documents/springWorkspace/spring-tutorial14/src/test/resources
+2015-05-19 16:05:27,905 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.marsuaga.spring.test:spring-tutorial1_13:0.0.1-SNAPSHOT @ /Users/mariaarsuagarios/Documents/springWorkspace/spring-tutorial1_13/pom.xml.
+2015-05-19 16:05:28,007 [Worker-7] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /spring-tutorial1_13/src/main/java
+2015-05-19 16:05:28,008 [Worker-7] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /spring-tutorial1_13/src/test/java
+2015-05-19 16:05:28,045 [Worker-7] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 0 sec
+2015-05-19 16:05:28,389 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.marsuaga.spring.test:spring-tutorial1_13:0.0.1-SNAPSHOT @ /Users/mariaarsuagarios/Documents/springWorkspace/spring-tutorial1_13/pom.xml.
+2015-05-19 16:05:28,505 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-05-19 16:05:28,506 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/mariaarsuagarios/Documents/springWorkspace/spring-tutorial1_13/src/main/resources
+2015-05-19 16:05:28,507 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-05-19 16:05:28,507 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/mariaarsuagarios/Documents/springWorkspace/spring-tutorial1_13/src/test/resources
+2015-05-19 16:05:28,888 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.marsuaga.spring.test:spring-tutorial1_13:0.0.1-SNAPSHOT @ /Users/mariaarsuagarios/Documents/springWorkspace/spring-tutorial1_13/pom.xml.
+2015-05-19 16:05:29,647 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-05-19 16:05:29,648 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/mariaarsuagarios/Documents/springWorkspace/spring-tutorial1_13/src/main/resources
+2015-05-19 16:05:29,649 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-05-19 16:05:29,649 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/mariaarsuagarios/Documents/springWorkspace/spring-tutorial1_13/src/test/resources
+2015-05-19 16:05:36,271 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-05-19 16:05:36,272 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/mariaarsuagarios/Documents/springWorkspace/spring-tutorial14/src/main/resources
+2015-05-19 16:05:36,273 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-05-19 16:05:36,273 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/mariaarsuagarios/Documents/springWorkspace/spring-tutorial14/src/test/resources
+2015-05-19 16:05:36,291 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-05-19 16:05:36,291 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/mariaarsuagarios/Documents/springWorkspace/spring-tutorial1_13/src/main/resources
+2015-05-19 16:05:36,292 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-05-19 16:05:36,292 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/mariaarsuagarios/Documents/springWorkspace/spring-tutorial1_13/src/test/resources
+2015-05-19 16:26:22,757 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-05-19 16:26:22,757 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/mariaarsuagarios/Documents/springWorkspace/spring-tutorial14/src/main/resources
+2015-05-19 16:26:22,759 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-05-19 16:26:22,759 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/mariaarsuagarios/Documents/springWorkspace/spring-tutorial14/src/test/resources
+2015-05-19 16:28:15,699 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-05-19 16:28:15,700 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/mariaarsuagarios/Documents/springWorkspace/spring-tutorial14/src/main/resources
+2015-05-19 16:28:15,701 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-05-19 16:28:15,701 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/mariaarsuagarios/Documents/springWorkspace/spring-tutorial14/src/test/resources
+2015-05-19 16:28:16,766 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-05-19 16:28:16,766 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/mariaarsuagarios/Documents/springWorkspace/spring-tutorial14/src/main/resources
+2015-05-19 16:28:16,768 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-05-19 16:28:16,768 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/mariaarsuagarios/Documents/springWorkspace/spring-tutorial14/src/test/resources

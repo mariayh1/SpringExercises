@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="jungle" class="com.marsuaga.spring.test15.Jungle">
+
+		<!-- <property name="largest" ref="lion"></property> -->
+		<property name="largest">
+			<bean id="lion" class="com.marsuaga.spring.test15.Animal">
+				<property name="name" value="Igor"></property>
+				<property name="type" value="lion"></property>
+			</bean>
+		</property>
+		<property name="animals">
+			<list>
+				<ref bean="dog" />
+				<ref bean="cat" />
+				<ref bean="lion" />
+			</list>
+		</property>
+	</bean>
+
+	<bean id="dog" class="com.marsuaga.spring.test15.Animal">
+		<property name="name" value="Manolo"></property>
+		<property name="type" value="dog"></property>
+	</bean>
+	<bean id="cat" class="com.marsuaga.spring.test15.Animal">
+		<property name="name" value="Maria"></property>
+		<property name="type" value="cat"></property>
+	</bean>
+</beans>
