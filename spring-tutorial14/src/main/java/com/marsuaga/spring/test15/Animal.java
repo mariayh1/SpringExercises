@@ -20,6 +20,4 @@ public class Animal {
 		return "Animal [name=" + name + ", type=" + type + "]";
 	}
 	
-	
-	
 }
