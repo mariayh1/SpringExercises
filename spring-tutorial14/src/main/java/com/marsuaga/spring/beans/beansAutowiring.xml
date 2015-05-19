@@ -7,9 +7,11 @@
 	1. multiple beans 
 	2. multiple beans implement the same interface and it is generalized -->
 <!-- Autowiring by name in case we use generalization but be careful
-    1. use the exactly the property names it is case-sensitive -->
+    1. use the exactly the property names it is case-sensitive
+    2. they can be from the same class not different classes ConsoleWrite and FileWriter -->
+<!-- Autowiring by constructor: they take into account types -->
 	<bean id="logger" class="com.marsuaga.spring.autowiring.Logger"
-		autowire="byName">
+		autowire="constructor">
 	</bean>
 	<bean id="consoleWriter"
 		class="com.marsuaga.spring.autowiring.ConsoleWriter">

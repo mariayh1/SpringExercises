@@ -5,6 +5,13 @@ public class Logger {
 	private LogWriter fileWriter;
 	
 	
+	
+	public Logger(LogWriter consoleWriter, LogWriter fileWriter) {
+		super();
+		this.consoleWriter = consoleWriter;
+		this.fileWriter = fileWriter;
+	}
+
 	public void setConsoleWriter(LogWriter consoleWriter) {
 		this.consoleWriter = consoleWriter;
 	}
