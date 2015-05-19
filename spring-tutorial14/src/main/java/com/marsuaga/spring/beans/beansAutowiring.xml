@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+	default-autowire="byType"
+	default-autowire-candidates="*Writer">
 
 <!-- Autowiring by type: be careful with:
 	1. multiple beans 
@@ -9,10 +11,12 @@
 <!-- Autowiring by name in case we use generalization but be careful
     1. use the exactly the property names it is case-sensitive
     2. they can be from the same class not different classes ConsoleWrite and FileWriter -->
-<!-- Autowiring by constructor: they take into account types -->
-	<bean id="logger" class="com.marsuaga.spring.autowiring.Logger"
-		autowire="constructor">
-	</bean>
+<!-- Autowiring by constructor: they take into account types, so indicate the specific types in the constructor
+instead of the interface class -->
+<!-- Default Autowiring
+	1. By Name: Indicating the property names
+	2. By Type: Indicating the concrete types and the candidates in case of duplication-->
+	
 	<bean id="consoleWriter"
 		class="com.marsuaga.spring.autowiring.ConsoleWriter">
 	</bean>
@@ -20,4 +24,9 @@
 	<bean id="fileWriter"
 		class="com.marsuaga.spring.autowiring.FileWriter">
 	</bean>
+	<bean id="squireel"
+		class="com.marsuaga.spring.autowiring.FileWriter">
+	</bean>
+	
+	<bean id="logger" class="com.marsuaga.spring.autowiring.Logger"></bean>
 </beans>

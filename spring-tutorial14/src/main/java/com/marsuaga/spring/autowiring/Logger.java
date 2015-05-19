@@ -1,22 +1,24 @@
 package com.marsuaga.spring.autowiring;
 
 public class Logger {
-	private LogWriter consoleWriter;
-	private LogWriter fileWriter;
+	private ConsoleWriter consoleWriter;
+	private FileWriter fileWriter;
 	
-	
-	
-	public Logger(LogWriter consoleWriter, LogWriter fileWriter) {
+	public Logger() {
+		super();
+	}
+
+	public Logger(ConsoleWriter consoleWriter, FileWriter fileWriter) {
 		super();
 		this.consoleWriter = consoleWriter;
 		this.fileWriter = fileWriter;
 	}
 
-	public void setConsoleWriter(LogWriter consoleWriter) {
+	public void setConsoleWriter(ConsoleWriter consoleWriter) {
 		this.consoleWriter = consoleWriter;
 	}
 	
-	public void setFileWriter(LogWriter fileWriter) {
+	public void setFileWriter(FileWriter fileWriter) {
 		this.fileWriter = fileWriter;
 	}
 	
