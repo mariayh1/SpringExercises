@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- Autowiring by type: be careful with:
+	1. multiple beans 
+	2. multiple beans implement the same interface and it is generalized -->
+	<bean id="logger" class="com.marsuaga.spring.autowiring.Logger"
+		autowire="byType">
+	</bean>
+	<bean id="consolewriter"
+		class="com.marsuaga.spring.autowiring.ConsoleWriter">
+	</bean>
+
+	<bean id="filewriter"
+		class="com.marsuaga.spring.autowiring.FileWriter">
+	</bean>
+</beans>
