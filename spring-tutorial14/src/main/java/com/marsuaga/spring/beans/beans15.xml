@@ -6,25 +6,27 @@
 
 	<bean id="jungle" class="com.marsuaga.spring.test15.Jungle">
 
-		<property name="largest" ref="lion"></property>
+		<property name="largest">
+			<bean class="com.marsuaga.spring.test15.Animal">
+				<property name="name" value="Igor"></property>
+				<property name="type" value="lion"></property>
+			</bean>
+		</property>
 		<property name="animals">
 			<list>
-				<ref bean="dog" />
-				<ref bean="cat" />
-				<ref bean="lion" />
+				<bean class="com.marsuaga.spring.test15.Animal">
+					<property name="name" value="Manolo"></property>
+					<property name="type" value="dog"></property>
+				</bean>
+				<bean class="com.marsuaga.spring.test15.Animal">
+					<property name="name" value="Maria"></property>
+					<property name="type" value="cat"></property>
+				</bean>
+				<bean class="com.marsuaga.spring.test15.Animal">
+					<property name="name" value="Igor"></property>
+					<property name="type" value="lion"></property>
+				</bean>
 			</list>
 		</property>
-	</bean>
-	<bean id="lion" class="com.marsuaga.spring.test15.Animal">
-		<property name="name" value="Igor"></property>
-		<property name="type" value="lion"></property>
-	</bean>
-	<bean id="dog" class="com.marsuaga.spring.test15.Animal">
-		<property name="name" value="Manolo"></property>
-		<property name="type" value="dog"></property>
-	</bean>
-	<bean id="cat" class="com.marsuaga.spring.test15.Animal">
-		<property name="name" value="Maria"></property>
-		<property name="type" value="cat"></property>
 	</bean>
 </beans>
