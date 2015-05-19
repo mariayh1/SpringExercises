@@ -2,8 +2,7 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
-	default-autowire="byType"
-	default-autowire-candidates="*Writer">
+	default-autowire="byType">
 
 <!-- Autowiring by type: be careful with:
 	1. multiple beans 
@@ -16,17 +15,24 @@ instead of the interface class -->
 <!-- Default Autowiring
 	1. By Name: Indicating the property names
 	2. By Type: Indicating the concrete types and the candidates in case of duplication-->
+<!-- Deleting Autowiring problems
+	1. Using autowire-candidate false in the specific bean
+	2. Using primary in the correct bean -->
 	
 	<bean id="consoleWriter"
+		class="com.marsuaga.spring.autowiring.ConsoleWriter" primary="true">
+	</bean>
+	<bean id="panda"
 		class="com.marsuaga.spring.autowiring.ConsoleWriter">
 	</bean>
 
 	<bean id="fileWriter"
 		class="com.marsuaga.spring.autowiring.FileWriter">
 	</bean>
-	<bean id="squireel"
-		class="com.marsuaga.spring.autowiring.FileWriter">
+	<bean id="squirrel"
+		class="com.marsuaga.spring.autowiring.FileWriter"
+		autowire-candidate="false">
 	</bean>
-	
+
 	<bean id="logger" class="com.marsuaga.spring.autowiring.Logger"></bean>
 </beans>
