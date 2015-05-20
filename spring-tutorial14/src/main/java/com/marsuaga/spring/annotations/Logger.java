@@ -1,12 +1,13 @@
 package com.marsuaga.spring.annotations;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Logger {
 	//@Autowired
 	private ConsoleWriter consoleWriter;
 	//@Autowired
-	private FileWriter fileWriter;
+	private LogWriter fileWriter;
 	
 	
 	/*@Autowired
@@ -16,13 +17,15 @@ public class Logger {
 		
 	}*/
 
-	@Autowired(required=false)
+	@Autowired
+	@Qualifier("toconsole")
 	public void setConsoleWriter(ConsoleWriter consoleWriter) {
 		this.consoleWriter = consoleWriter;
 	}
 	
 	@Autowired
-	public void setFileWriter(FileWriter fileWriter) {
+	@Qualifier("filewriter")
+	public void setFileWriter(LogWriter fileWriter) {
 		this.fileWriter = fileWriter;
 	}
 	
