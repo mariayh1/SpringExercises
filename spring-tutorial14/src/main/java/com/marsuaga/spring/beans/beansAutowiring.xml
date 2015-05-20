@@ -4,34 +4,32 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
 	default-autowire="byType">
 
-<!-- Autowiring by type: be careful with:
-	1. multiple beans 
-	2. multiple beans implement the same interface and it is generalized -->
-<!-- Autowiring by name in case we use generalization but be careful
-    1. use the exactly the property names it is case-sensitive
-    2. they can be from the same class not different classes ConsoleWrite and FileWriter -->
-<!-- Autowiring by constructor: they take into account types, so indicate the specific types in the constructor
-instead of the interface class -->
-<!-- Default Autowiring
-	1. By Name: Indicating the property names
-	2. By Type: Indicating the concrete types and the candidates in case of duplication-->
-<!-- Deleting Autowiring problems
-	1. Using autowire-candidate false in the specific bean
-	2. Using primary in the correct bean -->
-	
-	<bean id="consoleWriter"
-		class="com.marsuaga.spring.autowiring.ConsoleWriter" primary="true">
-	</bean>
-	<bean id="panda"
-		class="com.marsuaga.spring.autowiring.ConsoleWriter">
-	</bean>
+	<!-- Autowiring by type: be careful with: 1. multiple beans 2. multiple 
+		beans implement the same interface and it is generalized -->
+	<!-- Autowiring by name in case we use generalization but be careful 1. 
+		use the exactly the property names it is case-sensitive 2. they can be from 
+		the same class not different classes ConsoleWrite and FileWriter -->
+	<!-- Autowiring by constructor: they take into account types, so indicate 
+		the specific types in the constructor instead of the interface class -->
+	<!-- Default Autowiring 1. By Name: Indicating the property names 2. By 
+		Type: Indicating the concrete types and the candidates in case of duplication -->
+	<!-- Deleting Autowiring problems 1. Using autowire-candidate false in the 
+		specific bean (then that bean cannot be autowiring in any way) 2. Using primary 
+		in the correct bean (then the other beans can be autowiring in other ways 
+		like by name) -->
 
-	<bean id="fileWriter"
-		class="com.marsuaga.spring.autowiring.FileWriter">
+	<bean id="consoleWriter" class="com.marsuaga.spring.autowiring.ConsoleWriter"
+		primary="true">
 	</bean>
-	<bean id="squirrel"
-		class="com.marsuaga.spring.autowiring.FileWriter"
+	
+	<bean id="panda" class="com.marsuaga.spring.autowiring.ConsoleWriter">
+	</bean>
+	
+	<bean id="squirrel" class="com.marsuaga.spring.autowiring.FileWriter"
 		autowire-candidate="false">
+	</bean>
+	
+	<bean id="fileWriter" class="com.marsuaga.spring.autowiring.FileWriter">
 	</bean>
 
 	<bean id="logger" class="com.marsuaga.spring.autowiring.Logger"></bean>
