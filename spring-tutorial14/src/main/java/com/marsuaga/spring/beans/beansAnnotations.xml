@@ -13,7 +13,13 @@
 3. @Autowired in constructor
 4. Mix @Autowired with constructor and setmethod or properties
 5. Even you do not need setMethods for autowiring with annotations -->
-<!-- Optional Beans:Indicate required=false in @Autowired in order to avoid errors if the bean is not injected or in the xml -->
+<!-- Optional Beans:Indicate required=false in
+ @Autowired in order to avoid errors if the bean is not injected or in the xml -->
+ <!-- Using qualifiers:
+ 1. in setmethods and the specific bean.
+ 2. qualifier in the class and in the setmethod-->
+ <!-- Use @Resource by name -->
+ <!-- Use @PreConstruct or @PostDestroy in case of singleton -->
 	<bean id="logger" class="com.marsuaga.spring.annotations.Logger"></bean>
 	<bean id="consolewriter"
 		class="com.marsuaga.spring.annotations.ConsoleWriter">
