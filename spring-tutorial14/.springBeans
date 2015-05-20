@@ -11,6 +11,7 @@
 		<config>src/main/java/com/marsuaga/spring/beans/beans15.xml</config>
 		<config>src/main/java/com/marsuaga/spring/beans/beansAutowiring.xml</config>
 		<config>src/main/java/com/marsuaga/spring/beans/beansAnnotations.xml</config>
+		<config>src/main/java/com/marsuaga/spring/beans/beansPropertyAnnotations.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
