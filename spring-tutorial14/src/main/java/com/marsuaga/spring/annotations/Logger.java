@@ -1,7 +1,10 @@
 package com.marsuaga.spring.annotations;
-import javax.annotation.PreDestroy;
 import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import javax.annotation.Resource;
+import javax.inject.Inject;
+import javax.inject.Named;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 
@@ -19,13 +22,18 @@ public class Logger {
 		
 	}*/
 
-	@Autowired
-	@Qualifier("toconsole")
-	public void setConsoleWriter(ConsoleWriter consoleWriter) {
+	
+	@Inject
+	@Named(value="consolewriter")
+	public void setConsoleWriter( ConsoleWriter consoleWriter) {
 		this.consoleWriter = consoleWriter;
 	}
+	public Logger() {
+		super();
+	}
 	
-	@Resource(name="squirrel")
+	@Inject
+	@Named(value="squirrel")
 	public void setFileWriter(LogWriter fileWriter) {
 		this.fileWriter = fileWriter;
 	}

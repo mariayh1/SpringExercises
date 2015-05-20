@@ -20,10 +20,10 @@
  2. qualifier in the class and in the setmethod-->
  <!-- Use @Resource by name -->
  <!-- Use @PreConstruct or @PostDestroy in case of singleton -->
+ <!-- @Inject in setmethods by name of the bean using @Named("name_of_the_bean") -->
 	<bean id="logger" class="com.marsuaga.spring.annotations.Logger"></bean>
 	<bean id="consolewriter"
 		class="com.marsuaga.spring.annotations.ConsoleWriter">
-	<qualifier value="toconsole"></qualifier>
 	</bean>
 	<bean id="squirrel"
 		class="com.marsuaga.spring.annotations.ConsoleWriter">
