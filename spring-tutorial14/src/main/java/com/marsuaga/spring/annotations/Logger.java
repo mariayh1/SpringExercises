@@ -7,7 +7,9 @@ import javax.inject.Named;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
 
+@Component
 public class Logger {
 	//@Autowired
 	private ConsoleWriter consoleWriter;
@@ -24,7 +26,6 @@ public class Logger {
 
 	
 	@Inject
-	@Named(value="consolewriter")
 	public void setConsoleWriter( ConsoleWriter consoleWriter) {
 		this.consoleWriter = consoleWriter;
 	}
@@ -33,7 +34,7 @@ public class Logger {
 	}
 	
 	@Inject
-	@Named(value="squirrel")
+	@Named(value="filewriter")
 	public void setFileWriter(LogWriter fileWriter) {
 		this.fileWriter = fileWriter;
 	}

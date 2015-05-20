@@ -21,7 +21,7 @@
  <!-- Use @Resource by name -->
  <!-- Use @PreConstruct or @PostDestroy in case of singleton -->
  <!-- @Inject in setmethods by name of the bean using @Named("name_of_the_bean") -->
-	<bean id="logger" class="com.marsuaga.spring.annotations.Logger"></bean>
+<!--  	<bean id="logger" class="com.marsuaga.spring.annotations.Logger"></bean>
 	<bean id="consolewriter"
 		class="com.marsuaga.spring.annotations.ConsoleWriter">
 	</bean>
@@ -30,6 +30,10 @@
 	</bean>
 	<bean id="filewriter"
 		class="com.marsuaga.spring.annotations.FileWriter">
-	</bean>
+	</bean>-->
+	
 	<context:annotation-config></context:annotation-config>
+	<context:component-scan
+		base-package="com.marsuaga.spring.annotations">
+	</context:component-scan>
 </beans>
