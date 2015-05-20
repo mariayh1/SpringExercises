@@ -13,10 +13,9 @@
 3. @Autowired in constructor
 4. Mix @Autowired with constructor and setmethod or properties
 5. Even you do not need setMethods for autowiring with annotations -->
+<!-- Indicate required==false in @Autowired in order to avoid errors if the bean is not injected or created -->
 	<bean id="logger" class="com.marsuaga.spring.annotations.Logger"></bean>
-	<bean id="consolewriter"
-		class="com.marsuaga.spring.annotations.ConsoleWriter">
-	</bean>
+	
 	<bean id="filewriter"
 		class="com.marsuaga.spring.annotations.FileWriter">
 	</bean>

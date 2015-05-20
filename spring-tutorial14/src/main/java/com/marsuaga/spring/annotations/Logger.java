@@ -3,9 +3,9 @@ package com.marsuaga.spring.annotations;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class Logger {
-	@Autowired
+	//@Autowired
 	private ConsoleWriter consoleWriter;
-	@Autowired
+	//@Autowired
 	private FileWriter fileWriter;
 	
 	
@@ -16,7 +16,7 @@ public class Logger {
 		
 	}*/
 
-	/*//@Autowired
+	@Autowired(required=false)
 	public void setConsoleWriter(ConsoleWriter consoleWriter) {
 		this.consoleWriter = consoleWriter;
 	}
@@ -24,13 +24,14 @@ public class Logger {
 	@Autowired
 	public void setFileWriter(FileWriter fileWriter) {
 		this.fileWriter = fileWriter;
-	}*/
+	}
 	
 	public void writeFile(String text){
 		fileWriter.write(text);
 	}
 	public void writeConsole(String text){
-		consoleWriter.write(text);
+		if(consoleWriter != null)
+			consoleWriter.write(text);
 	}
 	
 }
