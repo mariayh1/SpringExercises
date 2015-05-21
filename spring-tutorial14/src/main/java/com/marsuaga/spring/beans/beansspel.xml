@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd">
+
+<!-- SPEL with ? detects if it is null and then does not continue calculating the length  -->
+	<!--  <bean id="robot"
+		class="com.marsuaga.spring.spel.Robot">
+	<property name="id" value="#{randomtext.text?.length()}"></property>
+	<property name="speech" value="#{'random text:'+randomtext.getText()}"></property>
+	</bean>
+	<bean id="randomtext"
+		class="com.marsuaga.spring.spel.RandomText">
+	</bean>-->
+<!-- Using now SPEL with annotations -->
+	<context:component-scan base-package="com.marsuaga.spring.spel"></context:component-scan>
+</beans>
